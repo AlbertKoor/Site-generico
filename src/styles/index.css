@@ -1,4 +1,7 @@
 @import url("/src/styles/globalStyles.css");
+*{
+    font-family: Inter;
+}
 
 main {
     background: var(--color-primary);
@@ -6,5 +9,127 @@ main {
 
 body {
     width: 100%;
-    padding: clamp(1024px, 768px e 425px);
+    padding: clamp(425px, 768px, 1024px);
+}
+
+.header__container {
+    height: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid var(--color-third);
+    background: var(--color-secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__title {
+    font-size: var(--letras-menores);
+    width: 250px;
+    color: var(--gray-200);
+}
+
+.header__button {
+    display: flex;
+    height: 50px;
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--gray-200);
+    color: var(--gray-7, #F8F9FA);
+    text-align: center;
+    background-color: var(--color-secondary);
+}
+
+.section__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    min-height: 400px;
+    gap: 44px;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+.section__banner h1 {
+    font-size: var(--letras-maiores);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section__banner span {
+    color: var(--color-third);
+}
+
+.section__banner p {
+    color: var(--gray-150);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.section__banner button{
+    width: 142px;
+    height: 60px;
+    margin-top: 24px;
+    background-color: var(--color-third);
+    color: white;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    .section__banner {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .section__banner h1 {
+        font-size: var(--letras-menores);
+        margin-bottom: 15px;
+    }
+
+    .section__banner p {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.section__about {
+    background-color: var(--color-secondary);
+    padding: 82px 236px;
+}
+
+.container__1,
+.container__2 {
+    max-width: 100%;
+    padding: 20px;
+
+}
+
+.container__1 {
+    font-size: var(--letras-maiores);
+    color: #F8F9FA;
+    background-color: #ff0000;
+    width: 620px;
+}
+
+.container__2 {
+    font-size: var(--letras-menores2);
+    color: #F8F9FA;
+    background-color: blue;
+    width: 580px;
 }

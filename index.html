@@ -12,15 +12,29 @@
 
 <body>
     <!-- ====== Header ====== -->
-    <header>
-        <div>
-            <img src="" alt="" />
-            <button>Entrar para próxima turma</button>
-        </div>
+    <header class="header__container">
+        <h1 class="header__title">Generic Course</h1>
+        <button class="header__button modal__openbtn">Entrar para próxima turma</button>
     </header>
+
+    <!-- Modal -->
+    <dialog class="modal__container">
+        <div class="modal__container1">
+            <h1 class="modal__title">Cadastro</h1>
+            <p class="modal__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+            <form class="modal__form">
+                <label class="modal__email" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
+                <button type="submit" class="modal__button">Entrar na lista para próxima turma</button>
+            </form>
+            <button class="modal__closebtn">Fechar</button>
+        </div>
+    </dialog>
+
+
     <main>
         <!-- ====== Section Banner ====== -->
-        <section>
+        <section class="section__banner">
             <div>
                 <h1>Desenvolvendo <span>suas</span> próximas habilidades</h1>
                 <p>
@@ -33,10 +47,10 @@
         </section>
 
         <!-- ====== Section About ====== -->
-        <section>
+        <section class="section__about">
             <div>
-                <h2>Quem somos nós?</h2>
-                <p>
+                <h2 class="container__1">Quem somos nós?</h2>
+                <p class="container__2">
                     It is a long established fact that a reader will be distracted by
                     the readable content of a page when looking at its layout. The point
                     of using Lorem Ipsum is that it has a more-or-less normal
@@ -199,6 +213,8 @@
 
     <!-- ====== Modal ====== -->
     <dialog></dialog>
+
+    <script src="./src/scripts/index.js" defer></script>
 </body>
 
 </html>
