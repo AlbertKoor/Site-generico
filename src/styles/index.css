@@ -1,0 +1,10 @@
+@import url("/src/styles/globalStyles.css");
+
+main {
+    background: var(--color-primary);
+}
+
+body {
+    width: 100%;
+    padding: clamp(1024px, 768px e 425px);
+}
