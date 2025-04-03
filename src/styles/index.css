@@ -97,7 +97,7 @@ body {
     }
 
     .section__banner h1 {
-        font-size: var(--letras-menores);
+        font-size: var(--letras-menores2);
         margin-bottom: 15px;
     }
 
@@ -113,23 +113,74 @@ body {
     padding: 82px 236px;
 }
 
-.container__1,
-.container__2 {
-    max-width: 100%;
-    padding: 20px;
+.section__about > div{
+    display: flex;
+    align-items: center;
+}
 
+.section__about div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container__1 {
     font-size: var(--letras-maiores);
     color: #F8F9FA;
-    background-color: #ff0000;
     width: 620px;
+    font-weight: 600;
 }
 
 .container__2 {
     font-size: var(--letras-menores2);
     color: #F8F9FA;
-    background-color: blue;
     width: 580px;
+    font-weight: 400;
+}
+
+.section__FAQ {
+    display: flex;
+    background-color: burlywood;
+    flex-direction: column;
+    height: auto;
+    padding: 82px 234px;
+}
+
+.containers {
+    display: flex;
+    align-items: self-start ;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.content__left,
+.content__right1 {
+    width: 45%;
+}
+
+.content__left1 {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    background-color: blue;
+    padding: 10px;
+}
+
+.content__right1 {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 20px;
+}
+
+
+.containers h2{
+    font-size: var(--letras-maiores);
+}
+.containers h3 {
+    font-size: var(--letras-maiores);
+}
+.containers p{
+    font-size: var(--letras-menores2);
 }
